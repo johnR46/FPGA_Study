@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Apr 27 17:25:49 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "xInput" LOCATE = SITE "P38" LEVEL 1;
+COMP "xOutput" LOCATE = SITE "P134" LEVEL 1;
+SCHEMATIC END;
+

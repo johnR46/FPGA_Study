@@ -1,0 +1,11 @@
+[Inputs]
+=A[7:0]=
+=B[7:0]=
+=ALU_Sel[3:0]=
+[Outputs]
+CarryOut
+=ALU_Out[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel alu
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/FPGA/ALU/LAB8/ALU1.v -lang verilog -prj LAB8 -o alu.spl -module alu -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 alu.spl D:/FPGA/ALU/LAB8/alu.sym 

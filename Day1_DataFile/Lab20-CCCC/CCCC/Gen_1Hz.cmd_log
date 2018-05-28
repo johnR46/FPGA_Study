@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/CCCC/YYYY.v -lang verilog -prj CCCC -o Gen_1Hz.spl -module Gen_1Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Gen_1Hz.spl D:/CCCC/Gen_1Hz.sym 

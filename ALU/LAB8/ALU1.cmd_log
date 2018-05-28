@@ -1,0 +1,1 @@
+vhdtdtfi -lib work D:/FPGA/ALU/LAB8/ALU1.v -lang verilog -prj LAB8 -o ALU1.spl -module ALU1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
