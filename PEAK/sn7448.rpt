@@ -1,0 +1,582 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: sn7448                              Date: 12-19-2018,  7:49PM
+Device Used: XC9572-7-PC44
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+29 /72  ( 40%) 88  /360  ( 24%) 63 /144 ( 44%)   8  /72  ( 11%) 15 /34  ( 44%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Signals     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used        Used/Tot    Used/Tot    
+FB1           3/18        8/36        8           5/90       3/ 9
+FB2          16/18       16/36       16          59/90       2/ 9
+FB3           8/18       25/36       25          18/90       2/ 8
+FB4           2/18       14/36       14           6/90       2/ 8
+             -----       -----                   -----       -----     
+             29/72       63/144                  88/360      9/34 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    6           6    |  I/O              :    15      28
+Output        :    9           9    |  GCK/IO           :     0       3
+Bidirectional :    0           0    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     15          15
+
+** Power Data **
+
+There are 29 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'sn7448.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 9 Outputs **
+
+Signal                                Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                  Pts   Inps          No.  Type    Use     Mode Rate State
+dataout<6>                            2     7     FB1_2   1    I/O     O       STD  FAST 
+dataout<7>                            2     7     FB1_6   3    I/O     O       STD  FAST 
+rbo_bi                                1     6     FB1_15  8    I/O     O       STD  FAST 
+dataout<0>                            3     14    FB2_2   35   I/O     O       STD  FAST 
+dataout<5>                            3     14    FB2_8   38   I/O     O       STD  FAST 
+dataout<2>                            3     14    FB3_2   11   I/O     O       STD  FAST 
+dataout<4>                            3     14    FB3_11  18   I/O     O       STD  FAST 
+dataout<1>                            3     14    FB4_2   24   I/O     O       STD  FAST 
+dataout<3>                            3     14    FB4_11  28   I/O     O       STD  FAST 
+
+** 20 Buried Nodes **
+
+Signal                                Total Total Loc     Pwr  Reg Init
+Name                                  Pts   Inps          Mode State
+dataout_1<7>/dataout_1<7>_RSTF__$INT  3     6     FB2_4   STD  
+dataout_1<7>                          2     6     FB2_5   STD  RESET
+dataout_1<6>/dataout_1<6>_RSTF        3     5     FB2_6   STD  
+dataout_1<4>/dataout_1<4>_RSTF        3     5     FB2_7   STD  
+dataout_1<2>/dataout_1<2>_RSTF        3     6     FB2_9   STD  
+dataout_1<0>                          2     2     FB2_10  STD  RESET
+dataout_1<5>/dataout_1<5>_RSTF        4     5     FB2_11  STD  
+dataout_1<2>/dataout_1<2>_SETF__$INT  4     5     FB2_12  STD  
+dataout_1<0>/dataout_1<0>_RSTF        4     5     FB2_13  STD  
+dataout_1<4>/dataout_1<4>_SETF__$INT  5     6     FB2_14  STD  
+dataout_1<3>/dataout_1<3>_SETF__$INT  5     5     FB2_15  STD  
+dataout_1<3>/dataout_1<3>_RSTF        5     6     FB2_16  STD  
+dataout_1<1>/dataout_1<1>_SETF        5     5     FB2_17  STD  
+dataout_1<1>/dataout_1<1>_RSTF        5     6     FB2_18  STD  
+dataout_1<6>                          2     2     FB3_13  STD  RESET
+dataout_1<5>                          2     2     FB3_14  STD  RESET
+dataout_1<4>                          2     2     FB3_15  STD  RESET
+dataout_1<3>                          2     2     FB3_16  STD  RESET
+dataout_1<2>                          2     2     FB3_17  STD  RESET
+dataout_1<1>                          2     2     FB3_18  STD  RESET
+
+** 6 Inputs **
+
+Signal                                Loc     Pin  Pin     Pin     
+Name                                          No.  Type    Use     
+rbi                                   FB1_5   2    I/O     I
+datain<2>                             FB1_8   4    I/O     I
+datain<1>                             FB2_5   36   I/O     I
+lt                                    FB2_15  43   I/O     I
+datain<0>                             FB3_15  20   I/O     I
+datain<3>                             FB4_8   26   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@)         - Signal used as input (wire-AND input) to the macrocell logic.
+               The number of Signals Used may exceed the number of FB Inputs
+               Used due to wire-ANDing in the switch matrix.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               8/28
+Number of signals used by logic mapping into function block:  8
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+dataout<6>            2       0     0   3     FB1_2   1     I/O     O
+(unused)              0       0     0   5     FB1_3         (b)     
+(unused)              0       0     0   5     FB1_4         (b)     
+(unused)              0       0     0   5     FB1_5   2     I/O     I
+dataout<7>            2       0     0   3     FB1_6   3     I/O     O
+(unused)              0       0     0   5     FB1_7         (b)     
+(unused)              0       0     0   5     FB1_8   4     I/O     I
+(unused)              0       0     0   5     FB1_9   5     GCK/I/O 
+(unused)              0       0     0   5     FB1_10        (b)     
+(unused)              0       0     0   5     FB1_11  6     GCK/I/O 
+(unused)              0       0     0   5     FB1_12        (b)     
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  7     GCK/I/O 
+rbo_bi                1       0     0   4     FB1_15  8     I/O     O
+(unused)              0       0     0   5     FB1_16        (b)     
+(unused)              0       0     0   5     FB1_17  9     I/O     
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: datain<0>          4: datain<3>          7: lt 
+  2: datain<1>          5: dataout_1<6>       8: rbi 
+  3: datain<2>          6: dataout_1<7>     
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+dataout<6>           XXXXX.XX................................ 7       7
+dataout<7>           XXXX.XXX................................ 7       7
+rbo_bi               XXXX..XX................................ 6       6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+dataout<0>            3       0     0   2     FB2_2   35    I/O     O
+(unused)              0       0     0   5     FB2_3         (b)     
+dataout_1<7>/dataout_1<7>_RSTF__$INT
+                      3       0     0   2     FB2_4         (b)     (b)
+dataout_1<7>          2       0     0   3     FB2_5   36    I/O     I
+dataout_1<6>/dataout_1<6>_RSTF
+                      3       0     0   2     FB2_6   37    I/O     (b)
+dataout_1<4>/dataout_1<4>_RSTF
+                      3       0     0   2     FB2_7         (b)     (b)
+dataout<5>            3       0     0   2     FB2_8   38    I/O     O
+dataout_1<2>/dataout_1<2>_RSTF
+                      3       0     0   2     FB2_9   39    GSR/I/O (b)
+dataout_1<0>          2       0     0   3     FB2_10        (b)     (b)
+dataout_1<5>/dataout_1<5>_RSTF
+                      4       0     0   1     FB2_11  40    GTS/I/O (b)
+dataout_1<2>/dataout_1<2>_SETF__$INT
+                      4       0     0   1     FB2_12        (b)     (b)
+dataout_1<0>/dataout_1<0>_RSTF
+                      4       0     0   1     FB2_13        (b)     (b)
+dataout_1<4>/dataout_1<4>_SETF__$INT
+                      5       0     0   0     FB2_14  42    GTS/I/O (b)
+dataout_1<3>/dataout_1<3>_SETF__$INT
+                      5       0     0   0     FB2_15  43    I/O     I
+dataout_1<3>/dataout_1<3>_RSTF
+                      5       0     0   0     FB2_16        (b)     (b)
+dataout_1<1>/dataout_1<1>_SETF
+                      5       0     0   0     FB2_17  44    I/O     (b)
+dataout_1<1>/dataout_1<1>_RSTF
+                      5       0     0   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: datain<0>                             7: dataout_1<1>      12: dataout_1<6> 
+  2: datain<1>                             8: dataout_1<2>      13: dataout_1<7>.LFBK 
+  3: datain<2>                             9: dataout_1<3>      14: dataout_1<7>/dataout_1<7>_RSTF__$INT.LFBK 
+  4: datain<3>                            10: dataout_1<4>      15: lt 
+  5: dataout_1<0>.LFBK                    11: dataout_1<5>      16: rbi 
+  6: dataout_1<0>/dataout_1<0>_RSTF.LFBK 
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+dataout<0>           XXXXX.XXXXXXX.XX........................ 14      14
+dataout_1<7>/dataout_1<7>_RSTF__$INT 
+                     XXXX..........XX........................ 6       6
+dataout_1<7>         XXXX.........XX......................... 6       6
+dataout_1<6>/dataout_1<6>_RSTF 
+                     XXXX..........X......................... 5       5
+dataout_1<4>/dataout_1<4>_RSTF 
+                     XXXX..........X......................... 5       5
+dataout<5>           XXXXX.XXXXXXX.XX........................ 14      14
+dataout_1<2>/dataout_1<2>_RSTF 
+                     XXXX..........XX........................ 6       6
+dataout_1<0>         .....X.......X.......................... 2       2
+dataout_1<5>/dataout_1<5>_RSTF 
+                     XXXX..........X......................... 5       5
+dataout_1<2>/dataout_1<2>_SETF__$INT 
+                     XXXX..........X......................... 5       5
+dataout_1<0>/dataout_1<0>_RSTF 
+                     XXXX..........X......................... 5       5
+dataout_1<4>/dataout_1<4>_SETF__$INT 
+                     XXXX..........XX........................ 6       6
+dataout_1<3>/dataout_1<3>_SETF__$INT 
+                     XXXX..........X......................... 5       5
+dataout_1<3>/dataout_1<3>_RSTF 
+                     XXXX..........XX........................ 6       6
+dataout_1<1>/dataout_1<1>_SETF 
+                     XXXX..........X......................... 5       5
+dataout_1<1>/dataout_1<1>_RSTF 
+                     XXXX..........XX........................ 6       6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               25/11
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+dataout<2>            3       0     0   2     FB3_2   11    I/O     O
+(unused)              0       0     0   5     FB3_3         (b)     
+(unused)              0       0     0   5     FB3_4         (b)     
+(unused)              0       0     0   5     FB3_5   12    I/O     
+(unused)              0       0     0   5     FB3_6         (b)     
+(unused)              0       0     0   5     FB3_7         (b)     
+(unused)              0       0     0   5     FB3_8   13    I/O     
+(unused)              0       0     0   5     FB3_9   14    I/O     
+(unused)              0       0     0   5     FB3_10        (b)     
+dataout<4>            3       0     0   2     FB3_11  18    I/O     O
+(unused)              0       0     0   5     FB3_12        (b)     
+dataout_1<6>          2       0     0   3     FB3_13        (b)     (b)
+dataout_1<5>          2       0     0   3     FB3_14  19    I/O     (b)
+dataout_1<4>          2       0     0   3     FB3_15  20    I/O     I
+dataout_1<3>          2       0     0   3     FB3_16        (b)     (b)
+dataout_1<2>          2       0     0   3     FB3_17  22    I/O     (b)
+dataout_1<1>          2       0     0   3     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: datain<0>                       10: dataout_1<2>/dataout_1<2>_RSTF        18: dataout_1<5>.LFBK 
+  2: datain<1>                       11: dataout_1<2>/dataout_1<2>_SETF__$INT  19: dataout_1<5>/dataout_1<5>_RSTF 
+  3: datain<2>                       12: dataout_1<3>.LFBK                     20: dataout_1<6>.LFBK 
+  4: datain<3>                       13: dataout_1<3>/dataout_1<3>_RSTF        21: dataout_1<6>/dataout_1<6>_RSTF 
+  5: dataout_1<0>                    14: dataout_1<3>/dataout_1<3>_SETF__$INT  22: dataout_1<7> 
+  6: dataout_1<1>.LFBK               15: dataout_1<4>.LFBK                     23: dataout_1<7>/dataout_1<7>_RSTF__$INT 
+  7: dataout_1<1>/dataout_1<1>_RSTF  16: dataout_1<4>/dataout_1<4>_RSTF        24: lt 
+  8: dataout_1<1>/dataout_1<1>_SETF  17: dataout_1<4>/dataout_1<4>_SETF__$INT  25: rbi 
+  9: dataout_1<2>.LFBK              
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+dataout<2>           XXXXXX..X..X..X..X.X.X.XX............... 14      14
+dataout<4>           XXXXXX..X..X..X..X.X.X.XX............... 14      14
+dataout_1<6>         ....................X.X................. 2       2
+dataout_1<5>         ..................X...X................. 2       2
+dataout_1<4>         ...............XX....................... 2       2
+dataout_1<3>         ............XX.......................... 2       2
+dataout_1<2>         .........XX............................. 2       2
+dataout_1<1>         ......XX................................ 2       2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               14/22
+Number of signals used by logic mapping into function block:  14
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+dataout<1>            3       0     0   2     FB4_2   24    I/O     O
+(unused)              0       0     0   5     FB4_3         (b)     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   25    I/O     
+(unused)              0       0     0   5     FB4_6         (b)     
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   26    I/O     I
+(unused)              0       0     0   5     FB4_9   27    I/O     
+(unused)              0       0     0   5     FB4_10        (b)     
+dataout<3>            3       0     0   2     FB4_11  28    I/O     O
+(unused)              0       0     0   5     FB4_12        (b)     
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  29    I/O     
+(unused)              0       0     0   5     FB4_15  33    I/O     
+(unused)              0       0     0   5     FB4_16        (b)     
+(unused)              0       0     0   5     FB4_17  34    I/O     
+(unused)              0       0     0   5     FB4_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: datain<0>          6: dataout_1<1>      11: dataout_1<6> 
+  2: datain<1>          7: dataout_1<2>      12: dataout_1<7> 
+  3: datain<2>          8: dataout_1<3>      13: lt 
+  4: datain<3>          9: dataout_1<4>      14: rbi 
+  5: dataout_1<0>      10: dataout_1<5>     
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+dataout<1>           XXXXXXXXXXXXXX.......................... 14      14
+dataout<3>           XXXXXXXXXXXXXX.......................... 14      14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+dataout(0) <= NOT (((lt AND NOT dataout_1(0).LFBK)
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(1) AND dataout_1(2) AND dataout_1(3) AND 
+	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT rbi AND 
+	NOT dataout_1(7).LFBK)));
+
+
+dataout(1) <= NOT (((lt AND NOT dataout_1(1))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(0) AND dataout_1(2) AND dataout_1(3) AND 
+	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT dataout_1(7) AND 
+	NOT rbi)));
+
+
+dataout(2) <= NOT (((lt AND NOT dataout_1(2).LFBK)
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(0) AND NOT dataout_1(7) AND NOT rbi AND 
+	dataout_1(1).LFBK AND dataout_1(3).LFBK AND dataout_1(4).LFBK AND 
+	dataout_1(5).LFBK AND NOT dataout_1(6).LFBK)));
+
+
+dataout(3) <= NOT (((lt AND NOT dataout_1(3))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(0) AND dataout_1(1) AND dataout_1(2) AND 
+	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT dataout_1(7) AND 
+	NOT rbi)));
+
+
+dataout(4) <= NOT (((lt AND NOT dataout_1(4).LFBK)
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(0) AND NOT dataout_1(7) AND NOT rbi AND 
+	dataout_1(2).LFBK AND dataout_1(1).LFBK AND dataout_1(3).LFBK AND 
+	dataout_1(5).LFBK AND NOT dataout_1(6).LFBK)));
+
+
+dataout(5) <= NOT (((lt AND NOT dataout_1(5))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)
+	OR (lt AND dataout_1(1) AND dataout_1(2) AND dataout_1(3) AND 
+	dataout_1(4) AND NOT dataout_1(6) AND NOT rbi AND dataout_1(0).LFBK AND 
+	NOT dataout_1(7).LFBK)));
+
+
+dataout(6) <= NOT (((lt AND NOT dataout_1(6))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)));
+
+
+dataout(7) <= NOT (((lt AND NOT dataout_1(7))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi)));
+
+FDCPE_dataout_10: FDCPE port map (dataout_1(0),'0','0',dataout_1(0)/dataout_1(0)_RSTF.LFBK,dataout_1_PRE(0));
+dataout_1_PRE(0) <= (NOT dataout_1(0)/dataout_1(0)_RSTF.LFBK AND 
+	NOT dataout_1(7)/dataout_1(7)_RSTF__$INT.LFBK);
+
+
+dataout_1(0)/dataout_1(0)_RSTF <= ((lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+	datain(3))
+	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(0) AND 
+	NOT datain(3))
+	OR (lt AND NOT datain(2) AND datain(1) AND datain(0) AND 
+	datain(3))
+	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0) AND 
+	NOT datain(3)));
+
+
+dataout_1(1)/dataout_1(1)_SETF <= ((lt AND NOT datain(2) AND NOT datain(0))
+	OR (lt AND NOT datain(2) AND NOT datain(3))
+	OR (lt AND datain(1) AND datain(0) AND NOT datain(3))
+	OR (lt AND NOT datain(1) AND datain(0) AND datain(3))
+	OR (lt AND NOT datain(1) AND NOT datain(0) AND NOT datain(3)));
+
+FDCPE_dataout_11: FDCPE port map (dataout_1(1),'0','0',dataout_1(1)/dataout_1(1)_RSTF,dataout_1(1)/dataout_1(1)_SETF);
+
+
+dataout_1(1)/dataout_1(1)_RSTF <= ((lt AND datain(2) AND datain(1) AND NOT datain(0))
+	OR (lt AND datain(2) AND NOT datain(0) AND datain(3))
+	OR (lt AND datain(2) AND datain(1) AND datain(3) AND rbi)
+	OR (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+	NOT datain(3))
+	OR (lt AND NOT datain(2) AND datain(1) AND datain(0) AND 
+	datain(3)));
+
+FDCPE_dataout_12: FDCPE port map (dataout_1(2),'0','0',dataout_1(2)/dataout_1(2)_RSTF,NOT dataout_1(2)/dataout_1(2)_SETF__$INT);
+
+
+dataout_1(2)/dataout_1(2)_SETF__$INT <= ((NOT lt)
+	OR (datain(2) AND datain(1) AND datain(3))
+	OR (datain(2) AND NOT datain(0) AND datain(3))
+	OR (NOT datain(2) AND datain(1) AND NOT datain(0) AND NOT datain(3)));
+
+
+dataout_1(2)/dataout_1(2)_RSTF <= ((lt AND datain(2) AND NOT datain(0) AND datain(3))
+	OR (lt AND datain(2) AND datain(1) AND datain(3) AND rbi)
+	OR (lt AND NOT datain(2) AND datain(1) AND NOT datain(0) AND 
+	NOT datain(3)));
+
+
+dataout_1(3)/dataout_1(3)_SETF__$INT <= ((NOT lt)
+	OR (datain(2) AND datain(1) AND datain(0))
+	OR (datain(2) AND NOT datain(1) AND NOT datain(0) AND NOT datain(3))
+	OR (NOT datain(2) AND datain(1) AND NOT datain(0) AND datain(3))
+	OR (NOT datain(2) AND NOT datain(1) AND datain(0) AND NOT datain(3)));
+
+FDCPE_dataout_13: FDCPE port map (dataout_1(3),'0','0',dataout_1(3)/dataout_1(3)_RSTF,NOT dataout_1(3)/dataout_1(3)_SETF__$INT);
+
+
+dataout_1(3)/dataout_1(3)_RSTF <= ((lt AND datain(2) AND datain(1) AND datain(0) AND 
+	NOT datain(3))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND rbi)
+	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(0) AND 
+	NOT datain(3))
+	OR (lt AND NOT datain(2) AND datain(1) AND NOT datain(0) AND 
+	datain(3))
+	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0) AND 
+	NOT datain(3)));
+
+
+dataout_1(4)/dataout_1(4)_SETF__$INT <= ((NOT lt)
+	OR (datain(0) AND NOT datain(3))
+	OR (datain(2) AND NOT datain(1) AND NOT datain(3))
+	OR (NOT datain(2) AND NOT datain(1) AND datain(0))
+	OR (datain(2) AND datain(1) AND datain(0) AND NOT rbi));
+
+FDCPE_dataout_14: FDCPE port map (dataout_1(4),'0','0',dataout_1(4)/dataout_1(4)_RSTF,NOT dataout_1(4)/dataout_1(4)_SETF__$INT);
+
+
+dataout_1(4)/dataout_1(4)_RSTF <= ((lt AND datain(0) AND NOT datain(3))
+	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(3))
+	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0)));
+
+
+dataout_1(5)/dataout_1(5)_RSTF <= ((lt AND NOT datain(2) AND datain(1) AND NOT datain(3))
+	OR (lt AND NOT datain(2) AND datain(0) AND NOT datain(3))
+	OR (lt AND datain(1) AND datain(0) AND NOT datain(3))
+	OR (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+	datain(3)));
+
+FDCPE_dataout_15: FDCPE port map (dataout_1(5),'0','0',dataout_1(5)/dataout_1(5)_RSTF,dataout_1_PRE(5));
+dataout_1_PRE(5) <= (NOT dataout_1(7)/dataout_1(7)_RSTF__$INT AND 
+	NOT dataout_1(5)/dataout_1(5)_RSTF);
+
+FDCPE_dataout_16: FDCPE port map (dataout_1(6),'0','0',dataout_1(6)/dataout_1(6)_RSTF,dataout_1_PRE(6));
+dataout_1_PRE(6) <= (NOT dataout_1(7)/dataout_1(7)_RSTF__$INT AND 
+	NOT dataout_1(6)/dataout_1(6)_RSTF);
+
+
+dataout_1(6)/dataout_1(6)_RSTF <= ((lt AND datain(2) AND NOT datain(1) AND datain(3))
+	OR (lt AND NOT datain(2) AND NOT datain(1) AND NOT datain(3))
+	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+	NOT datain(3)));
+
+
+dataout_1(7)/dataout_1(7)_RSTF__$INT <= ((NOT lt)
+	OR (datain(2) AND NOT datain(1) AND datain(0) AND datain(3))
+	OR (datain(2) AND datain(0) AND datain(3) AND NOT rbi));
+
+FDCPE_dataout_17: FDCPE port map (dataout_1(7),'0','0',NOT dataout_1(7)/dataout_1(7)_RSTF__$INT.LFBK,dataout_1_PRE(7));
+dataout_1_PRE(7) <= (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+	datain(3));
+
+
+rbo_bi <= NOT ((lt AND datain(2) AND datain(1) AND datain(0) AND 
+	datain(3) AND NOT rbi));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE); 
+ FTCPE (Q,D,C,CLR,PRE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572-7-PC44
+
+
+   --------------------------------  
+  /6  5  4  3  2  1  44 43 42 41 40 \
+ | 7                             39 | 
+ | 8                             38 | 
+ | 9                             37 | 
+ | 10                            36 | 
+ | 11         XC9572-7-PC44      35 | 
+ | 12                            34 | 
+ | 13                            33 | 
+ | 14                            32 | 
+ | 15                            31 | 
+ | 16                            30 | 
+ | 17                            29 | 
+ \ 18 19 20 21 22 23 24 25 26 27 28 /
+   --------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 dataout<6>                       23 GND                           
+  2 rbi                              24 dataout<1>                    
+  3 dataout<7>                       25 TIE                           
+  4 datain<2>                        26 datain<3>                     
+  5 TIE                              27 TIE                           
+  6 TIE                              28 dataout<3>                    
+  7 TIE                              29 TIE                           
+  8 rbo_bi                           30 TDO                           
+  9 TIE                              31 GND                           
+ 10 GND                              32 VCC                           
+ 11 dataout<2>                       33 TIE                           
+ 12 TIE                              34 TIE                           
+ 13 TIE                              35 dataout<0>                    
+ 14 TIE                              36 datain<1>                     
+ 15 TDI                              37 TIE                           
+ 16 TMS                              38 dataout<5>                    
+ 17 TCK                              39 TIE                           
+ 18 dataout<4>                       40 TIE                           
+ 19 TIE                              41 VCC                           
+ 20 datain<0>                        42 TIE                           
+ 21 VCC                              43 lt                            
+ 22 TIE                              44 TIE                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572-7-PC44
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+FASTConnect/UIM optimzation                 : ON
+Local Feedback                              : ON
+Pin Feedback                                : ON
+Input Limit                                 : 36
+Pterm Limit                                 : 25

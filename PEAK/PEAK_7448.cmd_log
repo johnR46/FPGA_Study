@@ -1,0 +1,1 @@
+vhdtdtfi -prj PEAK -o PEAK_7448.spl -module PEAK_7448 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

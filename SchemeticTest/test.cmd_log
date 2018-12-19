@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pinIO.ucf -p xc9572-PC44-7 "test.ngc" test.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk test.ngd 
+XSLTProcess test_build.xml 
+tsim -intstyle ise test test.nga 
+taengine -intstyle ise -f test -w --format html1 -l test_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n test -i test 
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pinIO.ucf -p xc9572-PC44-7 "test.ngc" test.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk test.ngd 
+XSLTProcess test_build.xml 
+tsim -intstyle ise test test.nga 
+hprep6 -s IEEE1149 -n test -i test 

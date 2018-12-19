@@ -1,0 +1,3 @@
+MODULE add_test_Verilog
+	SUBMODULE test_Verilog
+		INSTANCE XLXI_1

@@ -1,0 +1,73 @@
+MDF Database:  version 1.0
+MDF_INFO | test_Verilog | XC9572-7-PC44
+MACROCELL | 1 | 1 | Q7_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A  | C  | B
+INPUTP | 3 | 9 | 67 | 15
+EQ | 2 | 
+   Q7 = A & C & B
+	# !A & !C & !B;
+
+MACROCELL | 1 | 7 | Q0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | C  | B
+INPUTP | 2 | 67 | 15
+EQ | 1 | 
+   Q0 = C & B;
+
+MACROCELL | 2 | 1 | Q1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A  | C  | B
+INPUTP | 3 | 9 | 67 | 15
+EQ | 2 | 
+   Q1 = A & C & !B
+	# !A & C & B;
+
+MACROCELL | 0 | 1 | Q2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | C  | B
+INPUTP | 2 | 67 | 15
+EQ | 1 | 
+   Q2 = C & !B;
+
+MACROCELL | 2 | 10 | Q3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A  | C  | B
+INPUTP | 3 | 9 | 67 | 15
+EQ | 2 | 
+   Q3 = A & !C & B
+	# !A & C & !B;
+
+MACROCELL | 0 | 5 | Q4_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | C  | B
+INPUTP | 2 | 67 | 15
+EQ | 1 | 
+   Q4 = !C & B;
+
+MACROCELL | 3 | 1 | Q5_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | A  | C  | B
+INPUTP | 3 | 9 | 67 | 15
+EQ | 2 | 
+   Q5 = A & !C & !B
+	# !A & !C & B;
+
+MACROCELL | 0 | 14 | Q6_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | C  | B
+INPUTP | 2 | 67 | 15
+EQ | 1 | 
+   Q6 = !C & !B;
+
+PIN | A | 64 | 0 | N/A | 9 | 4 | 1 | 1 | 2 | 1 | 2 | 10 | 3 | 1
+PIN | C | 64 | 0 | N/A | 67 | 8 | 1 | 1 | 1 | 7 | 2 | 1 | 0 | 1 | 2 | 10 | 0 | 5 | 3 | 1 | 0 | 14
+PIN | B | 64 | 0 | N/A | 15 | 8 | 1 | 1 | 1 | 7 | 2 | 1 | 0 | 1 | 2 | 10 | 0 | 5 | 3 | 1 | 0 | 14
+PIN | Q7 | 536871040 | 0 | N/A | 86
+PIN | Q0 | 536871040 | 0 | N/A | 89
+PIN | Q1 | 536871040 | 0 | N/A | 29
+PIN | Q2 | 536871040 | 0 | N/A | 11
+PIN | Q3 | 536871040 | 0 | N/A | 46
+PIN | Q4 | 536871040 | 0 | N/A | 13
+PIN | Q5 | 536871040 | 0 | N/A | 58
+PIN | Q6 | 536871040 | 0 | N/A | 26

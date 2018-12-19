@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/test_Verilog/add_test_Verilog.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/test_Verilog/add_test_Verilog.syr" 
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/test_Verilog/add_test_Verilog.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/test_Verilog/add_test_Verilog.syr" 

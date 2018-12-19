@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/No2/composit.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/No2/composit.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pinIO.ucf -p xc9572-PC44-7 "composit.ngc" composit.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk composit.ngd 
+tsim -intstyle ise composit composit.nga 
+hprep6 -s IEEE1149 -n composit -i composit 
+ngdbuild -intstyle ise -dd _ngo -uc pinIO.ucf -p xc9572-PC44-7 "composit.ngc" composit.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk composit.ngd 
+tsim -intstyle ise composit composit.nga 
+hprep6 -s IEEE1149 -n composit -i composit 
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/No2/composit.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/No2/composit.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pinIO.ucf -p xc9572-PC44-7 "composit.ngc" composit.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk composit.ngd 
+tsim -intstyle ise composit composit.nga 
+hprep6 -s IEEE1149 -n composit -i composit 

@@ -1,0 +1,25 @@
+MDF Database:  version 1.0
+MDF_INFO | Prog00 | XC9572-7-PC44
+MACROCELL | 2 | 4 | R_MSB_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | Data_B  | Data_C  | Data_A
+INPUTP | 3 | 12 | 11 | 13
+EQ | 3 | 
+   R_MSB = Data_A & Data_B
+	# Data_A & Data_C
+	# Data_B & Data_C;
+
+MACROCELL | 2 | 1 | R_LSB_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | Data_A  | Data_B  | Data_C
+INPUTP | 3 | 13 | 12 | 11
+EQ | 3 | 
+   !R_LSB = Data_A
+	$ Data_B & Data_C
+	# !Data_B & !Data_C;
+
+PIN | Data_A | 64 | 0 | N/A | 13 | 2 | 2 | 4 | 2 | 1
+PIN | Data_B | 64 | 0 | N/A | 12 | 2 | 2 | 4 | 2 | 1
+PIN | Data_C | 64 | 0 | N/A | 11 | 2 | 2 | 4 | 2 | 1
+PIN | R_MSB | 536871040 | 0 | N/A | 31
+PIN | R_LSB | 536871040 | 0 | N/A | 29

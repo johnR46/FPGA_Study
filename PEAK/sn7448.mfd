@@ -1,0 +1,362 @@
+MDF Database:  version 1.0
+MDF_INFO | sn7448 | XC9572-7-PC44
+MACROCELL | 1 | 9 | dataout_1<0>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 2 | 10 | 3 | 1 | 2 | 1 | 3 | 10 | 1 | 1 | 1 | 7
+INPUTS | 2 | dataout_1<7>/dataout_1<7>_RSTF__$INT.LFBK  | dataout_1<0>/dataout_1<0>_RSTF.LFBK
+INPUTMC | 2 | 1 | 3 | 1 | 12
+EQ | 5 | 
+   dataout_1<0>.D = Gnd;
+   dataout_1<0>.CLK = Gnd;
+   dataout_1<0>.AP = !dataout_1<0>/dataout_1<0>_RSTF.LFBK & 
+	!dataout_1<7>/dataout_1<7>_RSTF__$INT.LFBK;
+   dataout_1<0>.AR = dataout_1<0>/dataout_1<0>_RSTF.LFBK;
+
+MACROCELL | 2 | 17 | dataout_1<1>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 1 | 1 | 3 | 1 | 1 | 7 | 3 | 10 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<1>/dataout_1<1>_SETF  | dataout_1<1>/dataout_1<1>_RSTF
+INPUTMC | 2 | 1 | 16 | 1 | 17
+EQ | 4 | 
+   dataout_1<1>.D = Gnd;
+   dataout_1<1>.CLK = Gnd;
+   dataout_1<1>.AP = dataout_1<1>/dataout_1<1>_SETF;
+   dataout_1<1>.AR = dataout_1<1>/dataout_1<1>_RSTF;
+
+MACROCELL | 2 | 16 | dataout_1<2>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 1 | 1 | 3 | 1 | 1 | 7 | 3 | 10 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<2>/dataout_1<2>_SETF__$INT  | dataout_1<2>/dataout_1<2>_RSTF
+INPUTMC | 2 | 1 | 11 | 1 | 8
+EQ | 4 | 
+   dataout_1<2>.D = Gnd;
+   dataout_1<2>.CLK = Gnd;
+   dataout_1<2>.AP = !dataout_1<2>/dataout_1<2>_SETF__$INT;
+   dataout_1<2>.AR = dataout_1<2>/dataout_1<2>_RSTF;
+
+MACROCELL | 2 | 15 | dataout_1<3>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 1 | 1 | 3 | 1 | 1 | 7 | 3 | 10 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<3>/dataout_1<3>_SETF__$INT  | dataout_1<3>/dataout_1<3>_RSTF
+INPUTMC | 2 | 1 | 14 | 1 | 15
+EQ | 4 | 
+   dataout_1<3>.D = Gnd;
+   dataout_1<3>.CLK = Gnd;
+   dataout_1<3>.AP = !dataout_1<3>/dataout_1<3>_SETF__$INT;
+   dataout_1<3>.AR = dataout_1<3>/dataout_1<3>_RSTF;
+
+MACROCELL | 2 | 14 | dataout_1<4>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 1 | 1 | 3 | 1 | 1 | 7 | 3 | 10 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<4>/dataout_1<4>_SETF__$INT  | dataout_1<4>/dataout_1<4>_RSTF
+INPUTMC | 2 | 1 | 13 | 1 | 6
+EQ | 4 | 
+   dataout_1<4>.D = Gnd;
+   dataout_1<4>.CLK = Gnd;
+   dataout_1<4>.AP = !dataout_1<4>/dataout_1<4>_SETF__$INT;
+   dataout_1<4>.AR = dataout_1<4>/dataout_1<4>_RSTF;
+
+MACROCELL | 2 | 13 | dataout_1<5>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 6 | 1 | 1 | 3 | 1 | 1 | 7 | 3 | 10 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<7>/dataout_1<7>_RSTF__$INT  | dataout_1<5>/dataout_1<5>_RSTF
+INPUTMC | 2 | 1 | 3 | 1 | 10
+EQ | 5 | 
+   dataout_1<5>.D = Gnd;
+   dataout_1<5>.CLK = Gnd;
+   dataout_1<5>.AP = !dataout_1<7>/dataout_1<7>_RSTF__$INT & 
+	!dataout_1<5>/dataout_1<5>_RSTF;
+   dataout_1<5>.AR = dataout_1<5>/dataout_1<5>_RSTF;
+
+MACROCELL | 2 | 12 | dataout_1<6>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 7 | 1 | 1 | 3 | 1 | 0 | 1 | 3 | 10 | 1 | 7 | 2 | 1 | 2 | 10
+INPUTS | 2 | dataout_1<7>/dataout_1<7>_RSTF__$INT  | dataout_1<6>/dataout_1<6>_RSTF
+INPUTMC | 2 | 1 | 3 | 1 | 5
+EQ | 5 | 
+   dataout_1<6>.D = Gnd;
+   dataout_1<6>.CLK = Gnd;
+   dataout_1<6>.AP = !dataout_1<7>/dataout_1<7>_RSTF__$INT & 
+	!dataout_1<6>/dataout_1<6>_RSTF;
+   dataout_1<6>.AR = dataout_1<6>/dataout_1<6>_RSTF;
+
+MACROCELL | 1 | 4 | dataout_1<7>
+ATTRIBUTES | 8586160 | 0
+OUTPUTMC | 7 | 0 | 5 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 1 | 1 | 7
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | dataout_1<7>/dataout_1<7>_RSTF__$INT.LFBK
+INPUTMC | 1 | 1 | 3
+INPUTP | 5 | 9 | 15 | 87 | 50 | 62
+EQ | 5 | 
+   dataout_1<7>.D = Gnd;
+   dataout_1<7>.CLK = Gnd;
+   dataout_1<7>.AP = lt & datain<2> & !datain<1> & datain<0> & 
+	datain<3>;
+   dataout_1<7>.AR = !dataout_1<7>/dataout_1<7>_RSTF__$INT.LFBK;
+
+MACROCELL | 1 | 1 | dataout_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<7>.LFBK  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<1>  | dataout_1<2>  | dataout_1<3>  | dataout_1<4>  | dataout_1<5>  | dataout_1<6>  | dataout_1<0>.LFBK
+INPUTMC | 8 | 1 | 4 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 1 | 9
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<0> = lt & !dataout_1<0>.LFBK
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<1> & dataout_1<2> & dataout_1<3> & 
+	dataout_1<4> & dataout_1<5> & !dataout_1<6> & !rbi & 
+	!dataout_1<7>.LFBK;
+
+MACROCELL | 3 | 1 | dataout_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<1>  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<0>  | dataout_1<2>  | dataout_1<3>  | dataout_1<4>  | dataout_1<5>  | dataout_1<6>  | dataout_1<7>
+INPUTMC | 8 | 2 | 17 | 1 | 9 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 1 | 4
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<1> = lt & !dataout_1<1>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<0> & dataout_1<2> & dataout_1<3> & 
+	dataout_1<4> & dataout_1<5> & !dataout_1<6> & !dataout_1<7> & 
+	!rbi;
+
+MACROCELL | 2 | 1 | dataout_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<1>.LFBK  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<0>  | dataout_1<3>.LFBK  | dataout_1<4>.LFBK  | dataout_1<5>.LFBK  | dataout_1<6>.LFBK  | dataout_1<7>  | dataout_1<2>.LFBK
+INPUTMC | 8 | 2 | 17 | 1 | 9 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 1 | 4 | 2 | 16
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<2> = lt & !dataout_1<2>.LFBK
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<0> & !dataout_1<7> & !rbi & 
+	dataout_1<1>.LFBK & dataout_1<3>.LFBK & dataout_1<4>.LFBK & 
+	dataout_1<5>.LFBK & !dataout_1<6>.LFBK;
+
+MACROCELL | 3 | 10 | dataout_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<3>  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<0>  | dataout_1<1>  | dataout_1<2>  | dataout_1<4>  | dataout_1<5>  | dataout_1<6>  | dataout_1<7>
+INPUTMC | 8 | 2 | 15 | 1 | 9 | 2 | 17 | 2 | 16 | 2 | 14 | 2 | 13 | 2 | 12 | 1 | 4
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<3> = lt & !dataout_1<3>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<0> & dataout_1<1> & dataout_1<2> & 
+	dataout_1<4> & dataout_1<5> & !dataout_1<6> & !dataout_1<7> & 
+	!rbi;
+
+MACROCELL | 2 | 10 | dataout_4_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<1>.LFBK  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<0>  | dataout_1<2>.LFBK  | dataout_1<3>.LFBK  | dataout_1<5>.LFBK  | dataout_1<6>.LFBK  | dataout_1<7>  | dataout_1<4>.LFBK
+INPUTMC | 8 | 2 | 17 | 1 | 9 | 2 | 16 | 2 | 15 | 2 | 13 | 2 | 12 | 1 | 4 | 2 | 14
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<4> = lt & !dataout_1<4>.LFBK
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<0> & !dataout_1<7> & !rbi & 
+	dataout_1<2>.LFBK & dataout_1<1>.LFBK & dataout_1<3>.LFBK & 
+	dataout_1<5>.LFBK & !dataout_1<6>.LFBK;
+
+MACROCELL | 1 | 7 | dataout_5_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 14 | lt  | dataout_1<5>  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi  | dataout_1<7>.LFBK  | dataout_1<1>  | dataout_1<2>  | dataout_1<3>  | dataout_1<4>  | dataout_1<6>  | dataout_1<0>.LFBK
+INPUTMC | 8 | 2 | 13 | 1 | 4 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 12 | 1 | 9
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 6 | 
+   !dataout<5> = lt & !dataout_1<5>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi
+	# lt & dataout_1<1> & dataout_1<2> & dataout_1<3> & 
+	dataout_1<4> & !dataout_1<6> & !rbi & dataout_1<0>.LFBK & 
+	!dataout_1<7>.LFBK;
+
+MACROCELL | 0 | 1 | dataout_6_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 7 | lt  | dataout_1<6>  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTMC | 1 | 2 | 12
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 3 | 
+   !dataout<6> = lt & !dataout_1<6>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi;
+
+MACROCELL | 0 | 5 | dataout_7_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 7 | lt  | dataout_1<7>  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTMC | 1 | 1 | 4
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 3 | 
+   !dataout<7> = lt & !dataout_1<7>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi;
+
+MACROCELL | 0 | 14 | rbo_bi_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 2 | 
+   !rbo_bi = lt & datain<2> & datain<1> & datain<0> & 
+	datain<3> & !rbi;
+
+MACROCELL | 1 | 12 | dataout_1<0>/dataout_1<0>_RSTF
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 5 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>
+INPUTP | 5 | 9 | 15 | 87 | 50 | 62
+EQ | 8 | 
+   dataout_1<0>/dataout_1<0>_RSTF = lt & datain<2> & !datain<1> & datain<0> & 
+	datain<3>
+	# lt & datain<2> & !datain<1> & !datain<0> & 
+	!datain<3>
+	# lt & !datain<2> & datain<1> & datain<0> & 
+	datain<3>
+	# lt & !datain<2> & !datain<1> & datain<0> & 
+	!datain<3>;
+
+MACROCELL | 1 | 3 | dataout_1<7>/dataout_1<7>_RSTF__$INT
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 4 | 2 | 12 | 2 | 13 | 1 | 9 | 1 | 4
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 3 | 
+   dataout_1<7>/dataout_1<7>_RSTF__$INT = !lt
+	# datain<2> & !datain<1> & datain<0> & datain<3>
+	# datain<2> & datain<0> & datain<3> & !rbi;
+
+MACROCELL | 1 | 16 | dataout_1<1>/dataout_1<1>_SETF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 5 | lt  | datain<2>  | datain<0>  | datain<3>  | datain<1>
+INPUTP | 5 | 9 | 15 | 50 | 62 | 87
+EQ | 5 | 
+   dataout_1<1>/dataout_1<1>_SETF = lt & !datain<2> & !datain<0>
+	# lt & !datain<2> & !datain<3>
+	# lt & datain<1> & datain<0> & !datain<3>
+	# lt & !datain<1> & datain<0> & datain<3>
+	# lt & !datain<1> & !datain<0> & !datain<3>;
+
+MACROCELL | 1 | 17 | dataout_1<1>/dataout_1<1>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 7 | 
+   dataout_1<1>/dataout_1<1>_RSTF = lt & datain<2> & datain<1> & !datain<0>
+	# lt & datain<2> & !datain<0> & datain<3>
+	# lt & datain<2> & datain<1> & datain<3> & rbi
+	# lt & datain<2> & !datain<1> & datain<0> & 
+	!datain<3>
+	# lt & !datain<2> & datain<1> & datain<0> & 
+	datain<3>;
+
+MACROCELL | 1 | 11 | dataout_1<2>/dataout_1<2>_SETF__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 5 | lt  | datain<2>  | datain<1>  | datain<3>  | datain<0>
+INPUTP | 5 | 9 | 15 | 87 | 62 | 50
+EQ | 4 | 
+   dataout_1<2>/dataout_1<2>_SETF__$INT = !lt
+	# datain<2> & datain<1> & datain<3>
+	# datain<2> & !datain<0> & datain<3>
+	# !datain<2> & datain<1> & !datain<0> & !datain<3>;
+
+MACROCELL | 1 | 8 | dataout_1<2>/dataout_1<2>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 6 | lt  | datain<2>  | datain<0>  | datain<3>  | datain<1>  | rbi
+INPUTP | 6 | 9 | 15 | 50 | 62 | 87 | 12
+EQ | 4 | 
+   dataout_1<2>/dataout_1<2>_RSTF = lt & datain<2> & !datain<0> & datain<3>
+	# lt & datain<2> & datain<1> & datain<3> & rbi
+	# lt & !datain<2> & datain<1> & !datain<0> & 
+	!datain<3>;
+
+MACROCELL | 1 | 14 | dataout_1<3>/dataout_1<3>_SETF__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 5 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>
+INPUTP | 5 | 9 | 15 | 87 | 50 | 62
+EQ | 5 | 
+   dataout_1<3>/dataout_1<3>_SETF__$INT = !lt
+	# datain<2> & datain<1> & datain<0>
+	# datain<2> & !datain<1> & !datain<0> & !datain<3>
+	# !datain<2> & datain<1> & !datain<0> & datain<3>
+	# !datain<2> & !datain<1> & datain<0> & !datain<3>;
+
+MACROCELL | 1 | 15 | dataout_1<3>/dataout_1<3>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 9 | 
+   dataout_1<3>/dataout_1<3>_RSTF = lt & datain<2> & datain<1> & datain<0> & 
+	!datain<3>
+	# lt & datain<2> & datain<1> & datain<0> & rbi
+	# lt & datain<2> & !datain<1> & !datain<0> & 
+	!datain<3>
+	# lt & !datain<2> & datain<1> & !datain<0> & 
+	datain<3>
+	# lt & !datain<2> & !datain<1> & datain<0> & 
+	!datain<3>;
+
+MACROCELL | 1 | 13 | dataout_1<4>/dataout_1<4>_SETF__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 14
+INPUTS | 6 | lt  | datain<2>  | datain<1>  | datain<0>  | datain<3>  | rbi
+INPUTP | 6 | 9 | 15 | 87 | 50 | 62 | 12
+EQ | 5 | 
+   dataout_1<4>/dataout_1<4>_SETF__$INT = !lt
+	# datain<0> & !datain<3>
+	# datain<2> & !datain<1> & !datain<3>
+	# !datain<2> & !datain<1> & datain<0>
+	# datain<2> & datain<1> & datain<0> & !rbi;
+
+MACROCELL | 1 | 6 | dataout_1<4>/dataout_1<4>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 14
+INPUTS | 5 | lt  | datain<0>  | datain<3>  | datain<2>  | datain<1>
+INPUTP | 5 | 9 | 50 | 62 | 15 | 87
+EQ | 3 | 
+   dataout_1<4>/dataout_1<4>_RSTF = lt & datain<0> & !datain<3>
+	# lt & datain<2> & !datain<1> & !datain<3>
+	# lt & !datain<2> & !datain<1> & datain<0>;
+
+MACROCELL | 1 | 10 | dataout_1<5>/dataout_1<5>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 13
+INPUTS | 5 | lt  | datain<2>  | datain<0>  | datain<3>  | datain<1>
+INPUTP | 5 | 9 | 15 | 50 | 62 | 87
+EQ | 5 | 
+   dataout_1<5>/dataout_1<5>_RSTF = lt & !datain<2> & datain<1> & !datain<3>
+	# lt & !datain<2> & datain<0> & !datain<3>
+	# lt & datain<1> & datain<0> & !datain<3>
+	# lt & datain<2> & !datain<1> & datain<0> & 
+	datain<3>;
+
+MACROCELL | 1 | 5 | dataout_1<6>/dataout_1<6>_RSTF
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 5 | lt  | datain<2>  | datain<1>  | datain<3>  | datain<0>
+INPUTP | 5 | 9 | 15 | 87 | 62 | 50
+EQ | 4 | 
+   dataout_1<6>/dataout_1<6>_RSTF = lt & datain<2> & !datain<1> & datain<3>
+	# lt & !datain<2> & !datain<1> & !datain<3>
+	# lt & datain<2> & datain<1> & datain<0> & 
+	!datain<3>;
+
+PIN | lt | 64 | 0 | N/A | 9 | 22 | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 12 | 1 | 3 | 1 | 16 | 1 | 17 | 1 | 11 | 1 | 8 | 1 | 14 | 1 | 15 | 1 | 13 | 1 | 6 | 1 | 10 | 1 | 5
+PIN | datain<2> | 64 | 0 | N/A | 15 | 22 | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 12 | 1 | 3 | 1 | 16 | 1 | 17 | 1 | 11 | 1 | 8 | 1 | 14 | 1 | 15 | 1 | 13 | 1 | 6 | 1 | 10 | 1 | 5
+PIN | datain<1> | 64 | 0 | N/A | 87 | 22 | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 12 | 1 | 3 | 1 | 16 | 1 | 17 | 1 | 11 | 1 | 8 | 1 | 14 | 1 | 15 | 1 | 13 | 1 | 6 | 1 | 10 | 1 | 5
+PIN | datain<0> | 64 | 0 | N/A | 50 | 22 | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 12 | 1 | 3 | 1 | 16 | 1 | 17 | 1 | 11 | 1 | 8 | 1 | 14 | 1 | 15 | 1 | 13 | 1 | 6 | 1 | 10 | 1 | 5
+PIN | datain<3> | 64 | 0 | N/A | 62 | 22 | 1 | 4 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 12 | 1 | 3 | 1 | 16 | 1 | 17 | 1 | 11 | 1 | 8 | 1 | 14 | 1 | 15 | 1 | 13 | 1 | 6 | 1 | 10 | 1 | 5
+PIN | rbi | 64 | 0 | N/A | 12 | 14 | 1 | 1 | 3 | 1 | 2 | 1 | 3 | 10 | 2 | 10 | 1 | 7 | 0 | 1 | 0 | 5 | 0 | 14 | 1 | 3 | 1 | 17 | 1 | 8 | 1 | 15 | 1 | 13
+PIN | dataout<0> | 536871040 | 0 | N/A | 86
+PIN | dataout<1> | 536871040 | 0 | N/A | 58
+PIN | dataout<2> | 536871040 | 0 | N/A | 29
+PIN | dataout<3> | 536871040 | 0 | N/A | 67
+PIN | dataout<4> | 536871040 | 0 | N/A | 46
+PIN | dataout<5> | 536871040 | 0 | N/A | 89
+PIN | dataout<6> | 536871040 | 0 | N/A | 11
+PIN | dataout<7> | 536871040 | 0 | N/A | 13
+PIN | rbo_bi | 536871040 | 0 | N/A | 26

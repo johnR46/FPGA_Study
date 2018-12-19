@@ -1,0 +1,265 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : composit.vf
+// /___/   /\     Timestamp : 12/19/2018 19:01:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500 -verilog "C:/Users/All User/Desktop/FPGA_Study/No2/composit.vf" -w "C:/Users/All User/Desktop/FPGA_Study/No2/composit.sch"
+//Design Name: composit
+//Device: xc9500
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD_MXILINX_composit(C, 
+                           D, 
+                           Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input D;
+   output Q;
+   
+   wire XLXN_4;
+   
+   GND  I_36_43 (.G(XLXN_4));
+   FDCP  U0 (.C(C), 
+            .CLR(XLXN_4), 
+            .D(D), 
+            .PRE(XLXN_4), 
+            .Q(Q));
+endmodule
+`timescale 1ns / 1ps
+
+module FDRE_MXILINX_composit(C, 
+                             CE, 
+                             D, 
+                             R, 
+                             Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input D;
+    input R;
+   output Q;
+   
+   wire A0;
+   wire A1;
+   wire QD;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   AND3B1  I_36_32 (.I0(R), 
+                   .I1(D), 
+                   .I2(CE), 
+                   .O(A1));
+   AND3B2  I_36_33 (.I0(CE), 
+                   .I1(R), 
+                   .I2(Q_DUMMY), 
+                   .O(A0));
+   OR2  I_36_34 (.I0(A1), 
+                .I1(A0), 
+                .O(QD));
+   (* HU_SET = "I_36_42_0" *) (* RLOC = "R0C0" *) 
+   FD_MXILINX_composit  I_36_42 (.C(C), 
+                                .D(QD), 
+                                .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module FTRSE_MXILINX_composit(C, 
+                              CE, 
+                              R, 
+                              S, 
+                              T, 
+                              Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input R;
+    input S;
+    input T;
+   output Q;
+   
+   wire CE_S;
+   wire D_S;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* HU_SET = "I_36_35_1" *) 
+   FDRE_MXILINX_composit  I_36_35 (.C(C), 
+                                  .CE(CE_S), 
+                                  .D(D_S), 
+                                  .R(R), 
+                                  .Q(Q_DUMMY));
+   OR2  I_36_73 (.I0(S), 
+                .I1(TQ), 
+                .O(D_S));
+   OR2  I_36_77 (.I0(CE), 
+                .I1(S), 
+                .O(CE_S));
+endmodule
+`timescale 1ns / 1ps
+
+module CB4RE_MXILINX_composit(C, 
+                              CE, 
+                              R, 
+                              CEO, 
+                              Q0, 
+                              Q1, 
+                              Q2, 
+                              Q3, 
+                              TC);
+
+    input C;
+    input CE;
+    input R;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   AND4  I_36_31 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_DUMMY));
+   AND3  I_36_32 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3));
+   AND2  I_36_33 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2));
+   VCC  I_36_58 (.P(XLXN_1));
+   GND  I_36_64 (.G(XLXN_2));
+   AND2  I_36_69 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   (* HU_SET = "U0_2" *) 
+   FTRSE_MXILINX_composit #( .INIT(1'b0) ) U0 (.C(C), 
+                              .CE(CE), 
+                              .R(R), 
+                              .S(XLXN_2), 
+                              .T(XLXN_1), 
+                              .Q(Q0_DUMMY));
+   (* HU_SET = "U1_3" *) 
+   FTRSE_MXILINX_composit #( .INIT(1'b0) ) U1 (.C(C), 
+                              .CE(CE), 
+                              .R(R), 
+                              .S(XLXN_2), 
+                              .T(Q0_DUMMY), 
+                              .Q(Q1_DUMMY));
+   (* HU_SET = "U2_4" *) 
+   FTRSE_MXILINX_composit #( .INIT(1'b0) ) U2 (.C(C), 
+                              .CE(CE), 
+                              .R(R), 
+                              .S(XLXN_2), 
+                              .T(T2), 
+                              .Q(Q2_DUMMY));
+   (* HU_SET = "U3_5" *) 
+   FTRSE_MXILINX_composit #( .INIT(1'b0) ) U3 (.C(C), 
+                              .CE(CE), 
+                              .R(R), 
+                              .S(XLXN_2), 
+                              .T(T3), 
+                              .Q(Q3_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module composit(CLK_1HZ, 
+                AA, 
+                BB, 
+                CC, 
+                DD, 
+                QQ_0, 
+                QQ_1, 
+                QQ_2, 
+                QQ_3, 
+                QQ_4, 
+                QQ_5, 
+                QQ_6, 
+                QQ_7);
+
+    input CLK_1HZ;
+   output AA;
+   output BB;
+   output CC;
+   output DD;
+   output QQ_0;
+   output QQ_1;
+   output QQ_2;
+   output QQ_3;
+   output QQ_4;
+   output QQ_5;
+   output QQ_6;
+   output QQ_7;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire CC_DUMMY;
+   wire AA_DUMMY;
+   wire BB_DUMMY;
+   
+   assign AA = AA_DUMMY;
+   assign BB = BB_DUMMY;
+   assign CC = CC_DUMMY;
+   test_Verilog  XLXI_1 (.A(CC_DUMMY), 
+                        .B(BB_DUMMY), 
+                        .C(AA_DUMMY), 
+                        .Q0(QQ_0), 
+                        .Q1(QQ_1), 
+                        .Q2(QQ_2), 
+                        .Q3(QQ_3), 
+                        .Q4(QQ_4), 
+                        .Q5(QQ_5), 
+                        .Q6(QQ_6), 
+                        .Q7(QQ_7));
+   (* HU_SET = "XLXI_2_6" *) 
+   CB4RE_MXILINX_composit  XLXI_2 (.C(CLK_1HZ), 
+                                  .CE(XLXN_1), 
+                                  .R(XLXN_2), 
+                                  .CEO(), 
+                                  .Q0(AA_DUMMY), 
+                                  .Q1(BB_DUMMY), 
+                                  .Q2(CC_DUMMY), 
+                                  .Q3(DD), 
+                                  .TC());
+   VCC  XLXI_3 (.P(XLXN_1));
+   GND  XLXI_4 (.G(XLXN_2));
+endmodule

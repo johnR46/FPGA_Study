@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/No2/test_Verilog.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/No2/test_Verilog.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 "test_Verilog.ngc" test_Verilog.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk test_Verilog.ngd 
+XSLTProcess test_Verilog_build.xml 
+tsim -intstyle ise test_Verilog test_Verilog.nga 
+taengine -intstyle ise -f test_Verilog -w --format html1 -l test_Verilog_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n test_Verilog -i test_Verilog 
+vhdtdtfi -lib work {C:/Users/All User/Desktop/FPGA_Study/No2/test_Verilog.v} -lang verilog -prj No2 -o test_Verilog.spl -module test_Verilog -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 test_Verilog.spl {C:/Users/All User/Desktop/FPGA_Study/No2/test_Verilog.sym} 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 "test_Verilog.ngc" test_Verilog.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk test_Verilog.ngd 
+XSLTProcess test_Verilog_build.xml 
+tsim -intstyle ise test_Verilog test_Verilog.nga 
+hprep6 -s IEEE1149 -n test_Verilog -i test_Verilog 
+XSLTProcess test_Verilog_build.xml 
+XSLTProcess test_Verilog_build.xml 
+XSLTProcess test_Verilog_build.xml 

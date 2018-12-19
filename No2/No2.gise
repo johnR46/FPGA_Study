@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="No2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="composit.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="composit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="composit.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="composit.jed"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="composit.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="composit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="composit.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="composit.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="composit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="composit.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="composit.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="composit.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="composit.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="composit.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composit.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="composit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="composit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="composit.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="composit.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composit.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="composit.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="composit_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="composit_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="composit_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="composit_pad.csv"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="composit_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="test_Verilog.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="test_Verilog.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="test_Verilog.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="test_Verilog.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="test_Verilog.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="test_Verilog.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="test_Verilog.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="test_Verilog.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="test_Verilog.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="test_Verilog.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="test_Verilog.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_Verilog.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="test_Verilog.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="test_Verilog.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="test_Verilog.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="test_Verilog.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="test_Verilog.vm6"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="test_Verilog.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="test_Verilog_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="test_Verilog_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1545221105" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1545221105">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221106" xil_pn:in_ck="5178895065202916282" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2753066952478332339" xil_pn:start_ts="1545221105">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="composit.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221110" xil_pn:in_ck="5651009901743829939" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="-5125349099521692536" xil_pn:start_ts="1545221106">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="composit.jhd"/>
+      <outfile xil_pn:name="composit.lso"/>
+      <outfile xil_pn:name="composit.ngc"/>
+      <outfile xil_pn:name="composit.ngr"/>
+      <outfile xil_pn:name="composit.prj"/>
+      <outfile xil_pn:name="composit.stx"/>
+      <outfile xil_pn:name="composit.syr"/>
+      <outfile xil_pn:name="composit.xst"/>
+      <outfile xil_pn:name="composit_xst.xrpt"/>
+      <outfile xil_pn:name="test_Verilog.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221110" xil_pn:in_ck="162137715587499" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784893507751796336" xil_pn:start_ts="1545221110">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221113" xil_pn:in_ck="-4493434011482759236" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="5271358926975141487" xil_pn:start_ts="1545221110">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="composit.bld"/>
+      <outfile xil_pn:name="composit.ngd"/>
+      <outfile xil_pn:name="composit_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221118" xil_pn:in_ck="50496875142053779" xil_pn:name="TRANEXT_vm6File_xc9500" xil_pn:prop_ck="-5858382562203202604" xil_pn:start_ts="1545221113">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="composit.gyd"/>
+      <outfile xil_pn:name="composit.mfd"/>
+      <outfile xil_pn:name="composit.nga"/>
+      <outfile xil_pn:name="composit.pad"/>
+      <outfile xil_pn:name="composit.pnx"/>
+      <outfile xil_pn:name="composit.rpt"/>
+      <outfile xil_pn:name="composit.vm6"/>
+      <outfile xil_pn:name="composit.xml"/>
+      <outfile xil_pn:name="composit_build.xml"/>
+      <outfile xil_pn:name="composit_html"/>
+      <outfile xil_pn:name="composit_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1545221120" xil_pn:in_ck="-2550995616460340013" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-9204593535224376705" xil_pn:start_ts="1545221118">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="composit.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1545219629" xil_pn:in_ck="2331700363248890174" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1545219628">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

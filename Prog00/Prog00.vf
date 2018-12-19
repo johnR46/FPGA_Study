@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Prog00.vf
+// /___/   /\     Timestamp : 12/19/2018 17:45:17
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500 -verilog "C:/Users/All User/Desktop/FPGA_Study/Prog00/Prog00.vf" -w "C:/Users/All User/Desktop/FPGA_Study/Prog00/Prog00.sch"
+//Design Name: Prog00
+//Device: xc9500
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module myHalf_add_MUSER_Prog00(A, 
+                               B, 
+                               C_Out, 
+                               SUM);
+
+    input A;
+    input B;
+   output C_Out;
+   output SUM;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(SUM));
+   AND2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(C_Out));
+endmodule
+`timescale 1ns / 1ps
+
+module Prog00(Data_A, 
+              Data_B, 
+              Data_C, 
+              R_LSB, 
+              R_MSB);
+
+    input Data_A;
+    input Data_B;
+    input Data_C;
+   output R_LSB;
+   output R_MSB;
+   
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   
+   myHalf_add_MUSER_Prog00  XLXI_6 (.A(Data_C), 
+                                   .B(XLXN_22), 
+                                   .C_Out(XLXN_24), 
+                                   .SUM(R_LSB));
+   myHalf_add_MUSER_Prog00  XLXI_7 (.A(Data_B), 
+                                   .B(Data_A), 
+                                   .C_Out(XLXN_23), 
+                                   .SUM(XLXN_22));
+   OR2  XLXI_8 (.I0(XLXN_23), 
+               .I1(XLXN_24), 
+               .O(R_MSB));
+endmodule

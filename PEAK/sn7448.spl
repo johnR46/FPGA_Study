@@ -1,0 +1,8 @@
+[Inputs]
+lt
+rbi
+=datain[3:0]=
+[Outputs]
+=dataout[7:0]=
+[BiDir]
+rbo_bi

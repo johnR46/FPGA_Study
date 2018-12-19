@@ -1,0 +1,17 @@
+[Inputs]
+C
+B
+A
+[Outputs]
+Q7
+Q6
+Q5
+Q4
+Q3
+Q2
+Q1
+Q0
+[BiDir]
+[ATTRIBUTES]
+VeriModel test_Verilog
+

@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test.vf
+// /___/   /\     Timestamp : 12/19/2018 18:29:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family xc9500 -verilog "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.vf" -w "C:/Users/All User/Desktop/FPGA_Study/SchemeticTest/test.sch"
+//Design Name: test
+//Device: xc9500
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module test(A, 
+            B, 
+            F);
+
+    input A;
+    input B;
+   output F;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   NAND2  XLXI_1 (.I0(B), 
+                 .I1(XLXN_1), 
+                 .O(XLXN_3));
+   NAND2  XLXI_2 (.I0(XLXN_2), 
+                 .I1(A), 
+                 .O(XLXN_4));
+   NAND2  XLXI_3 (.I0(XLXN_4), 
+                 .I1(XLXN_3), 
+                 .O(F));
+   INV  XLXI_4 (.I(A), 
+               .O(XLXN_1));
+   INV  XLXI_5 (.I(B), 
+               .O(XLXN_2));
+endmodule

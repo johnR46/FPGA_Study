@@ -1,0 +1,191 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(0) <= NOT (((lt AND NOT dataout_1(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(1) AND dataout_1(2) AND dataout_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT rbi AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT dataout_1(7).LFBK)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(1) <= NOT (((lt AND NOT dataout_1(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(0) AND dataout_1(2) AND dataout_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT dataout_1(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT rbi)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(2) <= NOT (((lt AND NOT dataout_1(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(0) AND NOT dataout_1(7) AND NOT rbi AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(1).LFBK AND dataout_1(3).LFBK AND dataout_1(4).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(5).LFBK AND NOT dataout_1(6).LFBK)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(3) <= NOT (((lt AND NOT dataout_1(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(0) AND dataout_1(1) AND dataout_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(4) AND dataout_1(5) AND NOT dataout_1(6) AND NOT dataout_1(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT rbi)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(4) <= NOT (((lt AND NOT dataout_1(4).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(0) AND NOT dataout_1(7) AND NOT rbi AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(2).LFBK AND dataout_1(1).LFBK AND dataout_1(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(5).LFBK AND NOT dataout_1(6).LFBK)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(5) <= NOT (((lt AND NOT dataout_1(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND dataout_1(1) AND dataout_1(2) AND dataout_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	dataout_1(4) AND NOT dataout_1(6) AND NOT rbi AND dataout_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT dataout_1(7).LFBK)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(6) <= NOT (((lt AND NOT dataout_1(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout(7) <= NOT (((lt AND NOT dataout_1(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi)));
+</td></tr><tr><td>
+FDCPE_dataout_10: FDCPE port map (dataout_1(0),'0','0',dataout_1(0)/dataout_1(0)_RSTF.LFBK,dataout_1_PRE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataout_1_PRE(0) <= (NOT dataout_1(0)/dataout_1(0)_RSTF.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT dataout_1(7)/dataout_1(7)_RSTF__$INT.LFBK);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(0)/dataout_1(0)_RSTF <= ((lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(1)/dataout_1(1)_SETF <= ((lt AND NOT datain(2) AND NOT datain(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(1) AND datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(1) AND datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(1) AND NOT datain(0) AND NOT datain(3)));
+</td></tr><tr><td>
+FDCPE_dataout_11: FDCPE port map (dataout_1(1),'0','0',dataout_1(1)/dataout_1(1)_RSTF,dataout_1(1)/dataout_1(1)_SETF);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(1)/dataout_1(1)_RSTF <= ((lt AND datain(2) AND datain(1) AND NOT datain(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(3) AND rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3)));
+</td></tr><tr><td>
+FDCPE_dataout_12: FDCPE port map (dataout_1(2),'0','0',dataout_1(2)/dataout_1(2)_RSTF,NOT dataout_1(2)/dataout_1(2)_SETF__$INT);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(2)/dataout_1(2)_SETF__$INT <= ((NOT lt)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND datain(1) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND NOT datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datain(2) AND datain(1) AND NOT datain(0) AND NOT datain(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(2)/dataout_1(2)_RSTF <= ((lt AND datain(2) AND NOT datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(3) AND rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND datain(1) AND NOT datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(3)/dataout_1(3)_SETF__$INT <= ((NOT lt)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND datain(1) AND datain(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND NOT datain(1) AND NOT datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datain(2) AND datain(1) AND NOT datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datain(2) AND NOT datain(1) AND datain(0) AND NOT datain(3)));
+</td></tr><tr><td>
+FDCPE_dataout_13: FDCPE port map (dataout_1(3),'0','0',dataout_1(3)/dataout_1(3)_RSTF,NOT dataout_1(3)/dataout_1(3)_SETF__$INT);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(3)/dataout_1(3)_RSTF <= ((lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND rbi)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND datain(1) AND NOT datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(4)/dataout_1(4)_SETF__$INT <= ((NOT lt)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND NOT datain(1) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datain(2) AND NOT datain(1) AND datain(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND datain(1) AND datain(0) AND NOT rbi));
+</td></tr><tr><td>
+FDCPE_dataout_14: FDCPE port map (dataout_1(4),'0','0',dataout_1(4)/dataout_1(4)_RSTF,NOT dataout_1(4)/dataout_1(4)_SETF__$INT);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(4)/dataout_1(4)_RSTF <= ((lt AND datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(1) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND NOT datain(1) AND datain(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(5)/dataout_1(5)_RSTF <= ((lt AND NOT datain(2) AND datain(1) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(1) AND datain(0) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3)));
+</td></tr><tr><td>
+FDCPE_dataout_15: FDCPE port map (dataout_1(5),'0','0',dataout_1(5)/dataout_1(5)_RSTF,dataout_1_PRE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataout_1_PRE(5) <= (NOT dataout_1(7)/dataout_1(7)_RSTF__$INT AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT dataout_1(5)/dataout_1(5)_RSTF);
+</td></tr><tr><td>
+FDCPE_dataout_16: FDCPE port map (dataout_1(6),'0','0',dataout_1(6)/dataout_1(6)_RSTF,dataout_1_PRE(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataout_1_PRE(6) <= (NOT dataout_1(7)/dataout_1(7)_RSTF__$INT AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT dataout_1(6)/dataout_1(6)_RSTF);
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(6)/dataout_1(6)_RSTF <= ((lt AND datain(2) AND NOT datain(1) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND NOT datain(2) AND NOT datain(1) AND NOT datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datain(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+dataout_1(7)/dataout_1(7)_RSTF__$INT <= ((NOT lt)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND NOT datain(1) AND datain(0) AND datain(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datain(2) AND datain(0) AND datain(3) AND NOT rbi));
+</td></tr><tr><td>
+FDCPE_dataout_17: FDCPE port map (dataout_1(7),'0','0',NOT dataout_1(7)/dataout_1(7)_RSTF__$INT.LFBK,dataout_1_PRE(7));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataout_1_PRE(7) <= (lt AND datain(2) AND NOT datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+rbo_bi <= NOT ((lt AND datain(2) AND datain(1) AND datain(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datain(3) AND NOT rbi));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

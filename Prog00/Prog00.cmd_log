@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/Prog00/Prog00.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/Prog00/Prog00.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc Prog00.ucf -p xc9572-PC44-7 "Prog00.ngc" Prog00.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk Prog00.ngd 
+XSLTProcess Prog00_build.xml 
+tsim -intstyle ise Prog00 Prog00.nga 
+taengine -intstyle ise -f Prog00 -w --format html1 -l Prog00_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Prog00 -i Prog00 

@@ -1,0 +1,359 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 957244 | XC9572-7-PC44
+
+DEVICE | 9572 | 957244 | 
+
+NETWORK | test_Verilog | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | A_IBUF | test_Verilog_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | A | 551 | PI | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | C_IBUF | test_Verilog_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | C | 552 | PI | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | B_IBUF | test_Verilog_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | B | 553 | PI | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | OptxMapped | Q7_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q7_OBUF | 535 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q7_OBUF.Q | Q7_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q7_OBUF.UIM | 586 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q7_OBUF.Q | Q7_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q7_OBUF.SI | Q7_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q7_OBUF.D1 | 555 | ? | 0 | 4096 | Q7_OBUF | NULL | NULL | Q7_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q7_OBUF.D2 | 556 | ? | 0 | 4096 | Q7_OBUF | NULL | NULL | Q7_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | A_IBUF | IV_TRUE | C_IBUF | IV_TRUE | B_IBUF
+SPPTERM | 3 | IV_FALSE | A_IBUF | IV_FALSE | C_IBUF | IV_FALSE | B_IBUF
+
+SRFF_INSTANCE | Q7_OBUF.REG | Q7_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q7_OBUF.D | 554 | ? | 0 | 0 | Q7_OBUF | NULL | NULL | Q7_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q7_OBUF.Q | 557 | ? | 0 | 0 | Q7_OBUF | NULL | NULL | Q7_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q0_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q0_OBUF | 536 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q0_OBUF.Q | Q0_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q0_OBUF.UIM | 587 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q0_OBUF.Q | Q0_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q0_OBUF.SI | Q0_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q0_OBUF.D1 | 559 | ? | 0 | 4096 | Q0_OBUF | NULL | NULL | Q0_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q0_OBUF.D2 | 560 | ? | 0 | 4096 | Q0_OBUF | NULL | NULL | Q0_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | C_IBUF | IV_TRUE | B_IBUF
+
+SRFF_INSTANCE | Q0_OBUF.REG | Q0_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q0_OBUF.D | 558 | ? | 0 | 0 | Q0_OBUF | NULL | NULL | Q0_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q0_OBUF.Q | 561 | ? | 0 | 0 | Q0_OBUF | NULL | NULL | Q0_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q1_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q1_OBUF | 537 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q1_OBUF.Q | Q1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q1_OBUF.UIM | 588 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q1_OBUF.Q | Q1_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q1_OBUF.SI | Q1_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q1_OBUF.D1 | 563 | ? | 0 | 4096 | Q1_OBUF | NULL | NULL | Q1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q1_OBUF.D2 | 564 | ? | 0 | 4096 | Q1_OBUF | NULL | NULL | Q1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | A_IBUF | IV_TRUE | C_IBUF | IV_FALSE | B_IBUF
+SPPTERM | 3 | IV_FALSE | A_IBUF | IV_TRUE | C_IBUF | IV_TRUE | B_IBUF
+
+SRFF_INSTANCE | Q1_OBUF.REG | Q1_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q1_OBUF.D | 562 | ? | 0 | 0 | Q1_OBUF | NULL | NULL | Q1_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q1_OBUF.Q | 565 | ? | 0 | 0 | Q1_OBUF | NULL | NULL | Q1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q2_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q2_OBUF | 538 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q2_OBUF.Q | Q2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q2_OBUF.UIM | 589 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q2_OBUF.Q | Q2_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q2_OBUF.SI | Q2_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q2_OBUF.D1 | 567 | ? | 0 | 4096 | Q2_OBUF | NULL | NULL | Q2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q2_OBUF.D2 | 568 | ? | 0 | 4096 | Q2_OBUF | NULL | NULL | Q2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | C_IBUF | IV_FALSE | B_IBUF
+
+SRFF_INSTANCE | Q2_OBUF.REG | Q2_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q2_OBUF.D | 566 | ? | 0 | 0 | Q2_OBUF | NULL | NULL | Q2_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q2_OBUF.Q | 569 | ? | 0 | 0 | Q2_OBUF | NULL | NULL | Q2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q3_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q3_OBUF | 539 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q3_OBUF.Q | Q3_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q3_OBUF.UIM | 590 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q3_OBUF.Q | Q3_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q3_OBUF.SI | Q3_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q3_OBUF.D1 | 571 | ? | 0 | 4096 | Q3_OBUF | NULL | NULL | Q3_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q3_OBUF.D2 | 572 | ? | 0 | 4096 | Q3_OBUF | NULL | NULL | Q3_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | A_IBUF | IV_FALSE | C_IBUF | IV_TRUE | B_IBUF
+SPPTERM | 3 | IV_FALSE | A_IBUF | IV_TRUE | C_IBUF | IV_FALSE | B_IBUF
+
+SRFF_INSTANCE | Q3_OBUF.REG | Q3_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q3_OBUF.D | 570 | ? | 0 | 0 | Q3_OBUF | NULL | NULL | Q3_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q3_OBUF.Q | 573 | ? | 0 | 0 | Q3_OBUF | NULL | NULL | Q3_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q4_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q4_OBUF | 540 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q4_OBUF.Q | Q4_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q4_OBUF.UIM | 591 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q4_OBUF.Q | Q4_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q4_OBUF.SI | Q4_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q4_OBUF.D1 | 575 | ? | 0 | 4096 | Q4_OBUF | NULL | NULL | Q4_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q4_OBUF.D2 | 576 | ? | 0 | 4096 | Q4_OBUF | NULL | NULL | Q4_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | C_IBUF | IV_TRUE | B_IBUF
+
+SRFF_INSTANCE | Q4_OBUF.REG | Q4_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q4_OBUF.D | 574 | ? | 0 | 0 | Q4_OBUF | NULL | NULL | Q4_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q4_OBUF.Q | 577 | ? | 0 | 0 | Q4_OBUF | NULL | NULL | Q4_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q5_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q5_OBUF | 541 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q5_OBUF.Q | Q5_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q5_OBUF.UIM | 592 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q5_OBUF.Q | Q5_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q5_OBUF.SI | Q5_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | A_IBUF | 532 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | A_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q5_OBUF.D1 | 579 | ? | 0 | 4096 | Q5_OBUF | NULL | NULL | Q5_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q5_OBUF.D2 | 580 | ? | 0 | 4096 | Q5_OBUF | NULL | NULL | Q5_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | A_IBUF | IV_FALSE | C_IBUF | IV_FALSE | B_IBUF
+SPPTERM | 3 | IV_FALSE | A_IBUF | IV_FALSE | C_IBUF | IV_TRUE | B_IBUF
+
+SRFF_INSTANCE | Q5_OBUF.REG | Q5_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q5_OBUF.D | 578 | ? | 0 | 0 | Q5_OBUF | NULL | NULL | Q5_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q5_OBUF.Q | 581 | ? | 0 | 0 | Q5_OBUF | NULL | NULL | Q5_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | Q6_OBUF | test_Verilog_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q6_OBUF | 542 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q6_OBUF.Q | Q6_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q6_OBUF.UIM | 593 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q6_OBUF.Q | Q6_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q6_OBUF.SI | Q6_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C_IBUF | 533 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | C_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | B_IBUF | 534 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | B_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q6_OBUF.D1 | 583 | ? | 0 | 4096 | Q6_OBUF | NULL | NULL | Q6_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q6_OBUF.D2 | 584 | ? | 0 | 4096 | Q6_OBUF | NULL | NULL | Q6_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | C_IBUF | IV_FALSE | B_IBUF
+
+SRFF_INSTANCE | Q6_OBUF.REG | Q6_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q6_OBUF.D | 582 | ? | 0 | 0 | Q6_OBUF | NULL | NULL | Q6_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q6_OBUF.Q | 585 | ? | 0 | 0 | Q6_OBUF | NULL | NULL | Q6_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Q7 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q7_OBUF | 535 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q7_OBUF.Q | Q7_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q7 | 543 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q7 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q0 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q0_OBUF | 536 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q0_OBUF.Q | Q0_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q0 | 544 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q0 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q1 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q1_OBUF | 537 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q1_OBUF.Q | Q1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q1 | 545 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q1 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q2 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q2_OBUF | 538 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q2_OBUF.Q | Q2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q2 | 546 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q2 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q3 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q3_OBUF | 539 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q3_OBUF.Q | Q3_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q3 | 547 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q3 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q4 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q4_OBUF | 540 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q4_OBUF.Q | Q4_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q4 | 548 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q4 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q5 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q5_OBUF | 541 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q5_OBUF.Q | Q5_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q5 | 549 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q5 | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | Q6 | test_Verilog_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q6_OBUF | 542 | ? | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | Q6_OBUF.Q | Q6_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q6 | 550 | PO | 0 | 0 | test_Verilog_COPY_0_COPY_0 | NULL | NULL | Q6 | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | test_Verilog_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Q2_OBUF | 1 | NULL | 0 | Q2 | 1 | 1 | 49152
+FBPIN | 6 | Q4_OBUF | 1 | NULL | 0 | Q4 | 1 | 3 | 49152
+FBPIN | 8 | NULL | 0 | B_IBUF | 1 | NULL | 0 | 4 | 49152
+FBPIN | 15 | Q6_OBUF | 1 | NULL | 0 | Q6 | 1 | 8 | 49152
+
+FB_INSTANCE | FOOBAR2_ | test_Verilog_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Q7_OBUF | 1 | NULL | 0 | Q7 | 1 | 35 | 49152
+FBPIN | 8 | Q0_OBUF | 1 | NULL | 0 | Q0 | 1 | 38 | 49152
+FBPIN | 15 | NULL | 0 | A_IBUF | 1 | NULL | 0 | 43 | 49152
+
+FB_INSTANCE | FOOBAR3_ | test_Verilog_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Q1_OBUF | 1 | NULL | 0 | Q1 | 1 | 11 | 49152
+FBPIN | 11 | Q3_OBUF | 1 | NULL | 0 | Q3 | 1 | 18 | 49152
+
+FB_INSTANCE | FOOBAR4_ | test_Verilog_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Q5_OBUF | 1 | NULL | 0 | Q5 | 1 | 24 | 49152
+FBPIN | 11 | NULL | 0 | C_IBUF | 1 | NULL | 0 | 28 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | test_Verilog_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 24 | C | 28 | 25 | B | 4
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 77 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | C | 28 | 2 | B | 4 | 22 | A | 43
+
+FB_IMUX_INDEX | FOOBAR2_ | 77 | -1 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 76 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 24 | C | 28 | 25 | B | 4 | 35 | A | 43
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 77 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 76
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 0 | C | 28 | 2 | B | 4 | 22 | A | 43
+
+FB_IMUX_INDEX | FOOBAR4_ | 77 | -1 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 76 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+

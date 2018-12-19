@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/PEAK/sn7448.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/PEAK/sn7448.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 "sn7448.ngc" sn7448.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk sn7448.ngd 
+XSLTProcess sn7448_build.xml 
+tsim -intstyle ise sn7448 sn7448.nga 
+taengine -intstyle ise -f sn7448 -w --format html1 -l sn7448_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n sn7448 -i sn7448 
+vhdtdtfi -lib work PEAK_7448.vhd -prj PEAK -o sn7448.spl -module sn7448 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 sn7448.spl {C:/Users/All User/Desktop/FPGA_Study/PEAK/sn7448.sym} 

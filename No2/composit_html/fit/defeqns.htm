@@ -1,0 +1,57 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FTCPE_AA: FTCPE port map (AA,'1',CLK_1HZ,'0','0');
+</td></tr><tr><td>
+FTCPE_BB: FTCPE port map (BB,AA_OBUF.LFBK,CLK_1HZ,'0','0');
+</td></tr><tr><td>
+FTCPE_CC: FTCPE port map (CC,CC_T,CLK_1HZ,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CC_T <= (AA_OBUF.LFBK AND BB_OBUF.LFBK);
+</td></tr><tr><td>
+FTCPE_DD: FTCPE port map (DD,DD_T,CLK_1HZ,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DD_T <= (AA_OBUF.LFBK AND BB_OBUF.LFBK AND CC_OBUF.LFBK);
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_0 <= (AA.PIN AND BB.PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_1 <= ((AA.PIN AND BB.PIN AND NOT CC.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (AA.PIN AND NOT BB.PIN AND CC.PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_2 <= (AA.PIN AND NOT BB.PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_3 <= ((AA.PIN AND NOT BB.PIN AND NOT CC.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AA.PIN AND BB.PIN AND CC.PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_4 <= (NOT AA.PIN AND BB.PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_5 <= ((NOT AA.PIN AND BB.PIN AND NOT CC.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AA.PIN AND NOT BB.PIN AND CC.PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_6 <= (NOT AA.PIN AND NOT BB.PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+QQ_7 <= ((AA.PIN AND BB.PIN AND CC.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AA.PIN AND NOT BB.PIN AND NOT CC.PIN));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

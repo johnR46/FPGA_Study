@@ -1,0 +1,8 @@
+AUTO_TS_P2P:FROM:Select_1:TO:Output_0:1
+AUTO_TS_P2P:FROM:Select_0:TO:Output_0:1
+AUTO_TS_P2P:FROM:Select_1:TO:Output_1:1
+AUTO_TS_P2P:FROM:Select_0:TO:Output_1:1
+AUTO_TS_P2P:FROM:Select_1:TO:Output_2:1
+AUTO_TS_P2P:FROM:Select_0:TO:Output_2:1
+AUTO_TS_P2P:FROM:Select_1:TO:Output_3:1
+AUTO_TS_P2P:FROM:Select_0:TO:Output_3:1

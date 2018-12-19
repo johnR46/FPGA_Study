@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Users/All User/Desktop/FPGA_Study/PEAK/PEAK_7448.vhd" 2018/12/19.19:48:25 P.20131013
+EN work/sn7448 1545223731 \
+      FL "C:/Users/All User/Desktop/FPGA_Study/PEAK/PEAK_7448.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sn7448/behav 1545223732 \
+      FL "C:/Users/All User/Desktop/FPGA_Study/PEAK/PEAK_7448.vhd" EN work/sn7448 1545223731

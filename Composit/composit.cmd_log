@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.syr" 
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.syr" 
+xst -intstyle ise -ifn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.xst" -ofn "C:/Users/All User/Desktop/FPGA_Study/Composit/composit.syr" 

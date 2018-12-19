@@ -1,0 +1,40 @@
+Pin Freeze File:  version P.20131013
+
+957244 XC9572-7-PC44
+datain<0> S:PIN20
+datain<1> S:PIN36
+datain<2> S:PIN4
+datain<3> S:PIN26
+lt S:PIN43
+rbi S:PIN2
+dataout<0> S:PIN35
+dataout<1> S:PIN24
+dataout<2> S:PIN11
+dataout<3> S:PIN28
+dataout<4> S:PIN18
+dataout<5> S:PIN38
+dataout<6> S:PIN1
+dataout<7> S:PIN3
+rbo_bi S:PIN8
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 dataout_6_OBUF
+PARTITION FB1_6 dataout_7_OBUF
+PARTITION FB1_15 rbo_bi_OBUF
+
+PARTITION FB2_2 dataout_0_OBUF
+PARTITION FB2_4 dataout_1<7>/dataout_1<7>_RSTF__$INT dataout_1<7> dataout_1<6>/dataout_1<6>_RSTF dataout_1<4>/dataout_1<4>_RSTF
+		 dataout_5_OBUF dataout_1<2>/dataout_1<2>_RSTF dataout_1<0> dataout_1<5>/dataout_1<5>_RSTF
+		 dataout_1<2>/dataout_1<2>_SETF__$INT dataout_1<0>/dataout_1<0>_RSTF dataout_1<4>/dataout_1<4>_SETF__$INT dataout_1<3>/dataout_1<3>_SETF__$INT
+		 dataout_1<3>/dataout_1<3>_RSTF dataout_1<1>/dataout_1<1>_SETF dataout_1<1>/dataout_1<1>_RSTF
+PARTITION FB3_2 dataout_2_OBUF
+PARTITION FB3_11 dataout_4_OBUF
+PARTITION FB3_13 dataout_1<6> dataout_1<5> dataout_1<4> dataout_1<3>
+		 dataout_1<2> dataout_1<1>
+PARTITION FB4_2 dataout_1_OBUF
+PARTITION FB4_11 dataout_3_OBUF
+
+
